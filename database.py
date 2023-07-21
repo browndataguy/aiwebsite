@@ -1,6 +1,8 @@
 from sqlalchemy import create_engine, text
 import os
 
+db_connection_string = os.environ['DB_TEST']
+ 
 
 
 engine = create_engine(db_connection_string,
